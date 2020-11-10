@@ -73,12 +73,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** Responsive en surface plane
 
-**Je opdracht:** Ik ga 2 webpagina's van knab.nl namaken, het gaat om de home en inlog pagina.
+**Je opdracht:** Ik ga 2 webpagina's van Apple.com namaken, het gaat om de home en iphone12 pagina. (misschien toch andere pagina's) https://www.apple.com/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/knab-smallscreen.PNG" width="375px" alt="home pagina knab.nl">
+<img src="images/apple-website-homepage-smallscreen.jpeg" width="375px" alt="home pagina knab.nl">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/knab-smallscreen2.PNG" width="375px" alt="Inlog pagina knab.nl">
+<img src="images/apple-website-iphonepage-smallscreen.jpeg" width="375px" alt="Inlog pagina knab.nl">
