@@ -60,7 +60,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+<img src="images/Apple-Mobile-Website-Breakdown.png" width="375px" alt="Breakdown Schets Apple homepage">
+
 
 
 
@@ -75,8 +76,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/apple-website-homepage-smallscreen.jpeg" width="375px" alt="omschrijving van de pagina">
+<img src="images/apple-website-homepage-smallscreen.jpeg" width="375px" alt="Apple Homepage">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/apple-website-iphonepage-smallscreen.jpeg" width="375px" alt="omschrijving van de pagina">
+<img src="images/apple-website-iphonepage-smallscreen.jpeg" width="375px" alt="Apple Iphone12 pagina">
