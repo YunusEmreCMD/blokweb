@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** Yunus Emre Alkan
+**Auteur:** -jouw naam-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -69,16 +69,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** Zwart
+**Je startniveau:** -kies uit zwart, rood óf blauw-
 
-**Je focus:** Responsive en surface plane
+**Je focus:** -kies uit responsive óf surface plane-
 
-**Je opdracht:** Ik ga 2 webpagina's van Apple.com namaken, het gaat om de home en iphone12 pagina. (misschien toch andere pagina's) https://www.apple.com/
+**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/apple-website-homepage-smallscreen.jpeg" width="375px" alt="home pagina knab.nl">
+<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/apple-website-iphonepage-smallscreen.jpeg" width="375px" alt="Inlog pagina knab.nl">
+<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">

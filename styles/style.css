@@ -1,5 +1,205 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+@font-face {
+  font-family: AppleFontDisplay;
+  src: url('../fonts/SFProDisplay-Regular.woff');
 }
 
+@font-face {
+  font-family: AppleFontTekst;
+  src: url('../fonts/sf-pro-text_regular.woff');
+}
+
+
+body {
+  margin: 0em;
+  padding: 0em;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-family: AppleFontDisplay, Arial;
+  font-size: 32px;
+  margin: 0;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: .004em;
+}
+
+h2 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
+
+p, h3 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: .016em;
+}
+
+header {
+  background-color: #323232;
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 1em;
+}
+
+header a{
+
+}
+
+header a img {
+  height: 3em;
+  color: #FFFFFE;
+}
+
+#main-content {
+  font-family: AppleFontDisplay, Arial;
+}
+
+.bericht-blok {
+  //background-color: #E3413F;
+  background-color: #1C1C1E;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding: 0.75em 0em;
+}
+
+.bericht-blok span {
+  font-family: AppleFontTekst, Arial;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  //letter-spacing: .016em;
+}
+
+.bericht-blok a {
+  font-family: AppleFontDisplay, Arial;
+  font-size: 14px;
+  color: #2997ff;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: .012em;
+}
+
+.bericht-blok a:hover {
+  text-decoration: underline #2997ff;
+}
+
+.bericht-blok a:focus {
+  text-decoration: none;
+}
+
+/*
+.bericht-blok a:after {
+  content: "\f054" ;
+}
+*/
+
+.iphoneTwaalf {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.iphoneTwaalf h1 {
+  padding-top: 1em;
+  margin-bottom: -0.5em;
+}
+
+.iphoneTwaalf-tekst {
+  width: 40%;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.iphoneTwaalf-tekst h3 {
+
+}
+
+.iphoneTwaalf-tekst-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.iphoneTwaalf-tekst-link a {
+  text-decoration: none;
+  color: #2997FF;
+  font-size: 19px;
+  font-family: AppleFontDisplay, Arial;
+  line-height: 1.21053;
+  font-weight: 400;
+}
+
+.iphoneTwaalf-tekst-link a:hover {
+  text-decoration: underline #2997FF;
+}
+
+.fa-chevron-right{
+  padding-left: 0.5em;
+  line-height: 1.21053;
+  font-size: 0.75em;
+}
+
+
+.iphoneTwaalf img {
+  width: 100%;
+}
+
+
+
+
+
+.iphoneTwaalf2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.iphoneTwaalf2 h1 {
+  padding-top: 1em;
+  margin-bottom: -0.5em;
+}
+
+.iphoneTwaalf2-tekst {
+  width: 40%;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.iphoneTwaalf2-tekst h3 {
+
+}
+
+.iphoneTwaalf2-tekst-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.iphoneTwaalf2-tekst-link a {
+  text-decoration: none;
+  color: #2997FF;
+  font-size: 19px;
+  font-family: AppleFontDisplay, Arial;
+  line-height: 1.21053;
+  font-weight: 400;
+}
+
+.iphoneTwaalf2-tekst-link a:hover {
+  text-decoration: underline #2997FF;
+}
+
+.fa-chevron-right{
+  padding-left: 0.5em;
+  line-height: 1.21053;
+  font-size: 0.75em;
+}
+
+
+.iphoneTwaalf2 img {
+  width: 100%;
+}
