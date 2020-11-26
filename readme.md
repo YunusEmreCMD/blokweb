@@ -60,7 +60,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
-<img src="images/apple-mobile-website-breakdown.png" width="375px" alt="Breakdown Schets Apple homepage">
+Het is mij niet gelukt om het hier als PNG neer te zetten :(
+Dus check mijn breakdownpagina :) <a href="breakdownschets.html">Breakdown Schets Apple Homepage</a>
 
 
 ## Intake (week 1)
