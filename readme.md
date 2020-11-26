@@ -60,7 +60,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
-<img src="images/apple-mobile-website-breakdown.png" width="375px" alt="Breakdown Schets Apple homepage">
+<img src="images/apple-mobile-website-breakdown.jpeg" width="375px" alt="Breakdown Schets Apple homepage">
+<img src="images/apple-website-iphonepage-smallscreen.jpeg" width="375px" alt="Apple Iphone12 pagina">
 
 
 
