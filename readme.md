@@ -69,16 +69,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -kies uit zwart, rood óf blauw-
+**Je startniveau:** Zwart (Ben eignlk rood, maar ik sta open voor een uitdaging)
 
-**Je focus:** -kies uit responsive óf surface plane-
+**Je focus:** Ik ga de website responsive maken, en proberen ook meer aandacht te besteden aan de surface laag
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** <a href="Apple.com">Apple.com</a>
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/" width="375px" alt="omschrijving van de pagina">
+<img src="images/apple-website-homepage-smallscreen.jpeg" width="375px" alt="omschrijving van de pagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="apple-website-iphonepage-smallscreen.jpeg" width="375px" alt="omschrijving van de pagina">
