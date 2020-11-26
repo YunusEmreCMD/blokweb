@@ -61,7 +61,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Breakdownschets (week 1)
 
 Het is mij niet gelukt om het hier als PNG neer te zetten :(
-Dus check mijn breakdownpagina :) <a href="breakdownschets.html">Breakdown Schets Apple Homepage</a>
+Dus check mijn breakdownpagina :) <a href="https://yunusemrecmd.github.io/blokweb/breakdownschets.htmll">Breakdown Schets Apple Homepage</a>
 
 
 ## Intake (week 1)
