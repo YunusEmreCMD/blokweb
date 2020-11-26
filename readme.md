@@ -69,11 +69,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** Zwart (Ben eignlk rood, maar ik sta open voor een uitdaging)
+**Je startniveau:** Zwart (Ben eignlk rood, maar ik sta open voor een uitdaging :)
 
 **Je focus:** Ik ga de website responsive maken, en proberen ook meer aandacht te besteden aan de surface laag
 
-**Je opdracht:** <a href="Apple.com">Apple.com</a>
+**Je opdracht:** <a href="https://www.apple.com/">Apple.com</a>
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
@@ -81,4 +81,4 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="apple-website-iphonepage-smallscreen.jpeg" width="375px" alt="omschrijving van de pagina">
+<img src="images/apple-website-iphonepage-smallscreen.jpeg" width="375px" alt="omschrijving van de pagina">
