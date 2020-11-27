@@ -1,0 +1,391 @@
+@font-face {
+  font-family: AppleFontDisplay;
+  src: url('../fonts/SFProDisplay-Regular.woff');
+}
+
+@font-face {
+  font-family: AppleFontTekst;
+  src: url('../fonts/sf-pro-text_regular.woff');
+}
+
+@media (min-width: 735px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+.flex > .homepage-intro-iphoneTwaalf {
+    width: 50%;
+  }
+}
+
+.flex {}
+
+body {
+  margin: 0em;
+  padding: 0em;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 32px;
+  margin: 0;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: .004em;
+}
+
+h2 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
+
+p,
+h3 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  //letter-spacing: .016em;
+}
+
+sup {
+  font-size: 8px;
+}
+
+nav {
+  background-color: #323232;
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 1em;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+nav a img {
+  height: 3.1em;
+  color: #FFFFFE;
+}
+
+#main-content-homepage {
+  font-family: AppleFontTekst, Arial;
+}
+
+.header-bericht-blok {
+  //background-color: #E3413F;
+  background-color: #1C1C1E;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding: 0.75em 0em;
+}
+
+.header-bericht-blok span {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  //letter-spacing: .016em;
+  width: 70%;
+  margin: 0em 15%;
+  display: block;
+}
+
+.header-bericht-blok a {
+  font-family: AppleFontDisplay, Arial;
+  font-size: 14px;
+  color: #2997ff;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: .012em;
+  text-decoration: none;
+}
+
+.header-bericht-blok a:hover {
+  text-decoration: underline #2997ff;
+}
+
+
+
+/*1E CONTENT BLOK | Intro Homepage */
+
+.homepage-intro-iphoneTwaalf {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.homepage-intro-iphoneTwaalf h1 {
+  padding-top: 1em;
+  margin-bottom: -0.5em;
+}
+
+.homepage-intro-iphoneTwaalf-tekst {
+  width: 40%;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.homepage-intro-iphoneTwaalf-tekst-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+.homepage-intro-iphoneTwaalf-tekst-link a {
+  font-family: AppleFontDisplay, Arial;
+  text-decoration: none;
+  color: #2997FF;
+  font-size: 19px;
+  line-height: 1.21053;
+  font-weight: 400;
+}
+
+.homepage-intro-iphoneTwaalf-tekst-link a:hover {
+  text-decoration: underline #2997FF;
+}
+
+.fa-chevron-right {
+  padding-left: 0.5em;
+  line-height: 1.21053;
+  font-size: 0.75em;
+}
+
+
+.homepage-intro-iphoneTwaalf img {
+  width: 100%;
+}
+
+
+
+/*2E CONTENT BLOK | Iphone 12 */
+
+.homepage-iphoneTwaalf {
+  background-color: #fbfbfd;
+  /*
+  background-image: url("../images/homepage-iphone12Pro-verschillende-kleuren.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+*/
+  color: black;
+  margin-top: 1em;
+}
+
+.homepage-iphoneTwaalf-tekst {}
+
+.homepage-iphoneTwaalf-tekst p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.homepage-iphoneTwaalf-tekst h3 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* 3E CONTENT BLOK | Gifts */
+
+.homepage-iphoneTwaalf-gifts {
+  background-color: #fbfbfd;
+  margin-top: 1em;
+}
+
+.homepage-iphoneTwaalf-gifts img:first-of-type {
+  height: 3.4em;
+  width: auto;
+  margin-top: 2em;
+}
+
+.homepage-iphoneTwaalf-gifts h1 {
+  margin: 0.2em auto 0.5em auto;
+  padding: 0em;
+  width: 80%;
+  color: black;
+}
+
+.homepage-iphoneTwaalf-gifts img:last-child {
+  height: 17em;
+  width: auto;
+  margin: 1em 0;
+}
+
+.wit {
+  height: 500px;
+}
+
+
+
+/* 4E CONTENT BLOK | HomePod mini */
+
+.homepage-homepod-mini {
+  background-color: #fbfbfd;
+  margin-top: 1em;
+}
+
+.homepage-homepod-mini-tekst {
+  margin-top: 1.5em;
+  padding-bottom: 2.5em;
+}
+
+.homepage-homepod-mini h1 {
+  color: black;
+}
+
+
+
+/* 5E CONTENT BLOK | MacBook Air */
+
+.homepage-macbook-air {
+  background-color: black;
+  margin-top: 1em;
+}
+
+.homepage-macbook-air {
+  background-color: black;
+  margin-top: 1em;
+}
+
+
+
+/* 6E CONTENT BLOK | Apple One */
+
+.homepage-apple-one {
+  background-color: #fbfbfd;
+  margin-top: 1em;
+  color: black;
+}
+
+.homepage-apple-one img:first-of-type {
+  height: 1.75em;
+  width: auto;
+  margin-top: 2em;
+}
+
+h2,
+.homepage-apple-one-tekst {
+  width: 60%;
+}
+
+h2 {
+  margin: 1em auto;
+}
+
+.homepage-apple-one img:last-of-type {
+  height: 18.5em;
+  width: auto;
+  margin-top: 2em;
+}
+
+
+
+
+/* 7E CONTENT BLOK | Apple News */
+
+
+.homepage-apple-news {
+  background-color: #FF2D55;
+  margin-top: 1em;
+  color: white;
+}
+
+.homepage-apple-news h2 {
+  line-height: normal;
+}
+
+.homepage-apple-news-tekst-link a {
+  color: white;
+}
+
+.homepage-apple-news-tekst-link a:hover {
+  text-decoration: underline white;
+}
+
+.homepage-apple-news img:first-of-type {
+  height: 1.75em;
+  width: auto;
+  margin-top: 2em;
+}
+
+
+
+
+/* 8E CONTENT BLOK | Apple Card */
+
+
+.homepage-apple-card {
+  background-color: #fbfbfd;
+  margin-top: 1em;
+  color: black;
+}
+
+.homepage-apple-card img:first-of-type {
+  height: 2em;
+  width: auto;
+  margin-top: 2em;
+}
+
+.homepage-apple-card h2 {
+  width: 50%;
+  line-height: normal;
+}
+
+.homepage-apple-one img:last-of-type {
+  height: 18.5em;
+  width: auto;
+  margin-top: 2em;
+}
+
+
+
+/* 8E CONTENT BLOK | Apple TV */
+
+
+.homepage-apple-tv {
+  background-image: url("../images/apple-tv-bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1em;
+  color: black;
+  background-color: #fbfbfd;
+}
+
+.homepage-apple-tv h2 {
+  line-height: normal;
+  margin: 0.5em auto;
+}
+
+.homepage-apple-tv-tekst-link a {
+  padding-bottom: 2em;
+}
+
+
+.homepage-apple-tv img:first-of-type {
+  height: 1.6em;
+  width: auto;
+  margin-top: 2.2em;
+  padding-bottom: 13em;
+}
+
+.homepage-apple-tv img:last-of-type {
+  height: 4em;
+  width: auto;
+  margin-top: 2em;
+}
+
+/*
+.homepage-apple-card h2 {
+  width: 50%;
+}
+
+.homepage-apple-one img:last-of-type {
+  height: 18.5em;
+  width: auto;
+  margin-top: 2em;
+}
+*/
