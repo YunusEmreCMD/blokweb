@@ -34,7 +34,7 @@ h1 {
   margin: 0;
   line-height: 1.125;
   font-weight: 600;
-  letter-spacing: .004em;
+  letter-spacing: -0.025em;
 }
 
 h2 {
@@ -51,7 +51,7 @@ h3 {
   font-size: 14px;
   line-height: 1.42859;
   font-weight: 400;
-  //letter-spacing: .016em;
+  /*  letter-spacing: .016em;*/
 }
 
 sup {
@@ -60,6 +60,7 @@ sup {
 
 nav {
   background-color: #323232;
+  backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
   padding: 0em 1em;
@@ -72,6 +73,7 @@ nav {
 nav a img {
   height: 3.1em;
   color: #FFFFFE;
+  vertical-align: middle;
 }
 
 #main-content-homepage {
@@ -79,27 +81,35 @@ nav a img {
 }
 
 .header-bericht-blok {
-  //background-color: #E3413F;
-  background-color: #1C1C1E;
+  background-color: #E3413F;
+  /*  background-color: #1C1C1E;*/
   text-align: center;
   color: white;
   font-size: 14px;
   padding: 0.75em 0em;
+  font-family: AppleFontDisplay, Arial;
 }
 
 .header-bericht-blok span {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42859;
   font-weight: 400;
-  //letter-spacing: .016em;
-  width: 70%;
-  margin: 0em 15%;
+  /*  letter-spacing: .016em;*/
+  margin: 0em 1em;
   display: block;
 }
 
 .header-bericht-blok a {
+  /*
   font-size: 14px;
   color: #2997ff;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: .012em;
+  text-decoration: none;
+*/
+  font-size: 14px;
+  color: white;
   line-height: 1.21053;
   font-weight: 400;
   letter-spacing: .012em;
@@ -108,6 +118,7 @@ nav a img {
 
 .header-bericht-blok a:hover {
   text-decoration: underline #2997ff;
+  text-decoration: underline white;
 }
 
 
@@ -134,12 +145,14 @@ nav a img {
 .homepage-intro-iphoneTwaalf-tekst-link {
   display: flex;
   justify-content: space-around;
+  width: 50%;
+  margin: auto;
 }
 
 .homepage-intro-iphoneTwaalf-tekst-link a {
   text-decoration: none;
   color: #2997FF;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.21053;
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -181,8 +194,8 @@ nav a img {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.homepage-iphoneTwaalf-tekst h2 {
-  color: rgba(0, 0, 0, 0.6);
+.homepage-iphoneTwaalf h2 {
+  padding-top: 1em;
 }
 
 
@@ -226,7 +239,7 @@ nav a img {
   margin-top: 1em;
 }
 
-.homepage-homepod-mini-tekst {
+.homepage-homepod-mini-tekst-link {
   margin-top: 1.5em;
   padding-bottom: 2.5em;
 }
@@ -343,7 +356,7 @@ h2 {
 
 
 
-/* 8E CONTENT BLOK | Apple TV */
+/* 9E CONTENT BLOK | Apple TV */
 
 
 .homepage-apple-tv {
