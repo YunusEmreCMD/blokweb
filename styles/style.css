@@ -87,6 +87,7 @@ nav a img {
   vertical-align: middle;
 }
 
+
 #main-content-homepage {
   font-family: AppleFontTekst, Arial;
 }
@@ -191,6 +192,14 @@ nav a img {
   }
 }
 
+@media (min-width: 1469px) {
+  .homepage-intro-iphoneTwaalf-tekst-link {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: auto;
+  }
+}
 
 .homepage-intro-iphoneTwaalf img {
   width: 100%;
@@ -199,14 +208,17 @@ nav a img {
 
 /* Display none iphone 12 image */
 
-/*
 @media (min-width: 735px) {
-  .homepage-iphoneTwaalf img {
-    display: none;
+  .homepage-intro-iphoneTwaalf img {
+    width: 65%;
   }
 }
-*/
 
+@media (min-width: 1069px) {
+  .homepage-intro-iphoneTwaalf img {
+    width: 40%;
+  }
+}
 
 /*2E CONTENT BLOK | Iphone 12 */
 
@@ -603,4 +615,91 @@ BLACK FRIDAY
   .product-nav ul {
     justify-content: center;
   }
+}
+
+
+
+
+
+
+
+nav a:nth-child(1) {
+
+  position: relative;
+
+  /* maten, vormgeving  en co van de button */
+  width: 2em;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5em;
+  font-size: 1em;
+  appearance: none;
+  border: none;
+  background-color: #323232;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* de streepjes */
+#hamburger-menu span {
+
+  position: absolute;
+
+  width: 1.25em;
+  height: 0.25px;
+  background-color: white;
+
+
+  transition: .5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+#hamburger-menu span:first-of-type {
+
+  transform: translatey(-5px);
+}
+
+#hamburger-menu span:last-of-type {
+
+  transform: translatey(5px);
+}
+
+
+
+body.menuOpen #hamburger-menu span {
+
+  transition: .25s ease-out;
+}
+
+body.menuOpen #hamburger-menu span:first-of-type {
+
+  transform: translatey(0) rotate(45deg);
+}
+
+/*
+@keyframes test {
+  0% {
+    transform: rotate(0deg);
+
+  }
+
+  50% {
+    transform: translateY(-0.25em);
+    transform: translatey(0) rotate(-22.5deg);
+  }
+
+  100% {
+        transform: translateY(-0.25em);
+    transform: translatey(0) rotate(-45deg);
+
+  }
+}
+*/
+
+body.menuOpen #hamburger-menu span:last-of-type {
+
+  transform: translatey(0) rotate(-45deg);
 }
