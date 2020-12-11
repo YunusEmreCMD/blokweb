@@ -544,6 +544,7 @@ BLACK FRIDAY
 .header-bericht-2e-iphone a {
   font-size: 12px;
   color: #2997FF;
+  display: block;
 }
 
 .header-bericht-2e-iphone a:hover {
@@ -614,6 +615,10 @@ BLACK FRIDAY
 @media (min-width: 735px) {
   .product-nav ul {
     justify-content: center;
+  }
+
+  .header-bericht-2e-iphone a {
+    display: inline-block;
   }
 }
 
