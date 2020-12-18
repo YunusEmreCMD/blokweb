@@ -16,12 +16,32 @@
   <!-- NAVIGATIE -->
 
   <nav>
-    <a id="hamburger-menu" aria-label="open het menu">
+    <button type="button" id="hamburger-menu" aria-label="open het menu">
       <span></span><span></span>
-    </a>
+    </button>
     <a href="index.html"><img src="images/apple-logo.svg" alt=""></a>
-    <a href="iphone.html"><img src="images/apple-winkelwagen.svg" alt=""></a>
+    <a href="iphone.html"><img class="test" src="images/apple-winkelwagen.svg" alt=""></a>
   </nav>
+
+  <div id="hamburger-menu-uitgeklapt">
+    <div class="search-container">
+      <form action="#">
+<!--        <button type="submit"><i class="fa fa-search"></i></button>-->
+        <input type="text" placeholder="Search apple.com" name="search">
+      </form>
+    </div>
+    <div class="hamburger-menu-links">
+      <ul>
+        <li><a href="#">Mac</a></li>
+        <li><a href="#">iPad</a></li>
+        <li><a href="#">iPhone</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#">TV</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+  </div>
 
   <main>
 
