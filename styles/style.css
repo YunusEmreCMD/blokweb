@@ -99,7 +99,7 @@ nav a img {
 }
 
 body.menuOpen .test {
-/*  display: none;*/
+  /*  display: none;*/
 }
 
 /*https://codepen.io/shooft/pen/jOMOroZ*/
@@ -117,6 +117,7 @@ nav button {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 #hamburger-menu span {
@@ -703,7 +704,7 @@ BLACK FRIDAY
   padding: 0em 1em;
   display: flex;
   justify-content: flex-start;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .product-nav ul::-webkit-scrollbar {
