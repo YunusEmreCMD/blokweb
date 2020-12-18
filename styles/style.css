@@ -18,6 +18,10 @@
   .flex > .homepage-intro-iphoneTwaalf {
     width: 50%;
   }
+
+  #hamburger-menu-uitgeklapt {
+    display: none;
+  }
 }
 
 .flex {}
@@ -71,7 +75,7 @@ sup {
 
 nav {
   background-color: #323232;
-  backdrop-filter: blur(5px);
+  /*  backdrop-filter: blur(5px);*/
   display: flex;
   justify-content: space-between;
   padding: 0em 1em;
@@ -79,6 +83,13 @@ nav {
   top: 0;
   right: 0;
   left: 0;
+  //z-index: 2;
+  transition: 1s;
+}
+
+body.menuOpen nav {
+  z-index: 2;
+  background-color: black;
 }
 
 nav a img {
@@ -87,10 +98,145 @@ nav a img {
   vertical-align: middle;
 }
 
+body.menuOpen .test {
+/*  display: none;*/
+}
+
+/*https://codepen.io/shooft/pen/jOMOroZ*/
+
+nav button {
+  position: relative;
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  background-color: Transparent;
+  border: none;
+  /*  Outline*/
+  /*  outline: none;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hamburger-menu span {
+
+  position: absolute;
+  width: 1.25em;
+  height: 0.25px;
+  background-color: white;
+  transition: .5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+#hamburger-menu span:first-of-type {
+  transform: translatey(-5px);
+}
+
+#hamburger-menu span:last-of-type {
+  transform: translatey(5px);
+}
+
+body.menuOpen #hamburger-menu span {
+  transition: .25s ease-out;
+}
+
+body.menuOpen #hamburger-menu span:first-of-type {
+  transform: translatey(0) rotate(45deg);
+}
 
 main {
   font-family: AppleFontTekst, Arial;
 }
+
+
+
+
+/*HAMBURGER MENU UITGEKLAPT*/
+
+#hamburger-menu-uitgeklapt {
+  position: fixed;
+  /*  background-color: rgba(255,255,255,0.5);*/
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-100%);
+  /*  transition: 0.5s;*/
+  transition: 1s ease-in-out;
+  z-index: 1;
+}
+
+body.menuOpen #hamburger-menu-uitgeklapt {
+  transform: translateY(0%);
+}
+
+#hamburger-menu-uitgeklapt h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.search-container {
+  border-bottom: 0.1em solid #424245;
+  padding-bottom: 1em;
+  padding-top: 3.5em;
+
+}
+
+.search-container input {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: none;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  font-size: 17px;
+  background-color: #1D1D1F;
+  /*  Outline*/
+  outline: none;
+  color: white;
+}
+
+.hamburger-menu-links {
+  padding-left: 2.5em;
+  font-family: AppleFontTekst, Arial;
+}
+
+.hamburger-menu-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+}
+
+.hamburger-menu-links ul li {}
+
+.hamburger-menu-links ul li a {
+  text-decoration: none;
+  color: #AFAFAF;
+  display: block;
+  padding: 0.65em 0em;
+}
+
+.hamburger-menu-links ul li a {
+  border-bottom: 0.1em solid #424245;
+}
+
+.hamburger-menu-links ul li:last-of-type a {
+  border: none;
+}
+
+.hamburger-menu-links ul li a:hover {
+  color: white;
+}
+
+input[placeholder] {
+  font-family: AppleFontTekst, Arial;
+  font-weight: 400;
+}
+
+
+
 
 .header-bericht-blok {
   background-color: #E3413F;
@@ -620,68 +766,6 @@ BLACK FRIDAY
   .header-bericht-2e-iphone a {
     display: inline-block;
   }
-}
-
-
-
-
-
-/*https://codepen.io/shooft/pen/jOMOroZ*/
-
-nav a:nth-child(1) {
-
-  position: relative;
-
-  /* maten, vormgeving  en co van de button */
-  width: 2em;
-  height: 2em;
-  margin: 0;
-  padding: 0;
-  padding-top: 0.5em;
-  font-size: 1em;
-  appearance: none;
-  border: none;
-  background-color: #323232;
-
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* de streepjes */
-#hamburger-menu span {
-
-  position: absolute;
-
-  width: 1.25em;
-  height: 0.25px;
-  background-color: white;
-
-
-  transition: .5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
-}
-
-#hamburger-menu span:first-of-type {
-
-  transform: translatey(-5px);
-}
-
-#hamburger-menu span:last-of-type {
-
-  transform: translatey(5px);
-}
-
-
-
-body.menuOpen #hamburger-menu span {
-
-  transition: .25s ease-out;
-}
-
-body.menuOpen #hamburger-menu span:first-of-type {
-
-  transform: translatey(0) rotate(45deg);
 }
 
 /*
