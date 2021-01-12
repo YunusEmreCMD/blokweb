@@ -8,25 +8,6 @@
   src: url('../fonts/sf-pro-text_regular.woff');
 }
 
-@media (min-width: 735px) {
-  .flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .flex > .homepage-intro-iphoneTwaalf {
-    width: 50%;
-  }
-
-  #hamburger-menu-uitgeklapt {
-    display: none;
-  }
-}
-
-.flex {}
-
-
 body {
   margin: 0em;
   padding: 0em;
@@ -42,29 +23,30 @@ h1 {
   letter-spacing: -0.025em;
 }
 
-
-/*Titels groter maken*/
-
-@media (min-width: 1069px) {
-  h1 {
-    font-size: 40px;
-  }
-}
-
-
+/*
 h2 {
   font-family: AppleFontTekst, Arial;
   font-size: 19px;
-  line-height: 1.47059;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -.022em;
+}
+*/
+
+h2 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 32px;
+  margin: auto;
+  line-height: 1.125;
+  font-weight: 600;
+  width: auto;
 }
 
 p,
 h3 {
   font-family: AppleFontTekst, Arial;
   font-size: 14px;
-  line-height: 1.42859;
+  line-height: 1.4;
   font-weight: 400;
   /*  letter-spacing: .016em;*/
 }
@@ -102,6 +84,9 @@ body.menuOpen .test {
   /*  display: none;*/
 }
 
+
+
+/* HAMBURGER MENU */
 /*https://codepen.io/shooft/pen/jOMOroZ*/
 
 nav button {
@@ -121,7 +106,6 @@ nav button {
 }
 
 #hamburger-menu span {
-
   position: absolute;
   width: 1.25em;
   height: 0.25px;
@@ -151,7 +135,6 @@ main {
 
 
 
-
 /*HAMBURGER MENU UITGEKLAPT*/
 
 #hamburger-menu-uitgeklapt {
@@ -177,14 +160,18 @@ body.menuOpen #hamburger-menu-uitgeklapt {
   margin: 0;
 }
 
-.search-container {
+
+
+/* ZOEKBALK */
+
+.zoekbalk {
   border-bottom: 0.1em solid #424245;
   padding-bottom: 1em;
   padding-top: 3.5em;
 
 }
 
-.search-container input {
+.zoekbalk input {
   padding: 0.5em;
   border-radius: 0.5em;
   border: none;
@@ -238,6 +225,7 @@ input[placeholder] {
 
 
 
+/* HEADER BERICHT */
 
 .header-bericht-blok {
   background-color: #E3413F;
@@ -249,19 +237,21 @@ input[placeholder] {
   font-family: AppleFontDisplay, Arial;
 }
 
-.header-bericht-blok span {
+.header-bericht-blok p {
+  font-family: AppleFontDisplay, Arial;
   font-size: 15px;
-  line-height: 1.42859;
+  line-height: 1.4;
   font-weight: 400;
   /*  letter-spacing: .016em;*/
   margin: 0em 1em;
   display: block;
+  padding: 0;
 }
 
 .header-bericht-blok a {
   /*
   font-size: 14px;
-  color: #2997ff;
+  color: #0071e3;
   line-height: 1.21053;
   font-weight: 400;
   letter-spacing: .012em;
@@ -269,14 +259,14 @@ input[placeholder] {
 */
   font-size: 14px;
   color: white;
-  line-height: 1.21053;
+  line-height: 1.2;
   font-weight: 400;
-  letter-spacing: .012em;
+  letter-spacing: .01em;
   text-decoration: none;
 }
 
 .header-bericht-blok a:hover {
-  text-decoration: underline #2997ff;
+  text-decoration: underline #0071e3;
   text-decoration: underline white;
 }
 
@@ -284,41 +274,51 @@ input[placeholder] {
 
 /*1E CONTENT BLOK | Intro Homepage */
 
-.homepage-intro-iphoneTwaalf {
+.homepagina .contentblok {
   text-align: center;
   background-color: black;
   color: white;
 }
 
-.homepage-intro-iphoneTwaalf h1 {
+.homepagina .contentblok h1 {
   padding-top: 1em;
   margin-bottom: -0.5em;
 }
 
-.homepage-intro-iphoneTwaalf-tekst {
+.contentblok h1 ~ h2 {
+  margin: 1em auto;
+  /*  https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_gen_sibling*/
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
+
+.homepagina .contentblok-tekst {
   width: 40%;
   margin: auto;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.homepage-intro-iphoneTwaalf-tekst-link {
+.homepagina .contentblok-link {
   display: flex;
   justify-content: space-around;
   width: 50%;
   margin: auto;
 }
 
-.homepage-intro-iphoneTwaalf-tekst-link a {
+.homepagina .contentblok-link a {
   text-decoration: none;
-  color: #2997FF;
+  color: #0071e3;
   font-size: 17px;
   line-height: 1.21053;
   font-weight: 400;
   letter-spacing: -0.05em;
 }
 
-.homepage-intro-iphoneTwaalf-tekst-link a:hover {
-  text-decoration: underline #2997FF;
+.homepagina .contentblok-link a:hover {
+  text-decoration: underline #0071e3;
 }
 
 .fa-chevron-right {
@@ -328,48 +328,10 @@ input[placeholder] {
 }
 
 
-/* Linkjes width verkleinen bij breakpoint */
-
-@media (min-width: 1069px) {
-  .homepage-intro-iphoneTwaalf-tekst-link {
-    display: flex;
-    justify-content: space-around;
-    width: 37.5%;
-    margin: auto;
-  }
-}
-
-@media (min-width: 1469px) {
-  .homepage-intro-iphoneTwaalf-tekst-link {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    margin: auto;
-  }
-}
-
-.homepage-intro-iphoneTwaalf img {
-  width: 100%;
-}
-
-
-/* Display none iphone 12 image */
-
-@media (min-width: 735px) {
-  .homepage-intro-iphoneTwaalf img {
-    width: 65%;
-  }
-}
-
-@media (min-width: 1069px) {
-  .homepage-intro-iphoneTwaalf img {
-    width: 40%;
-  }
-}
 
 /*2E CONTENT BLOK | Iphone 12 */
 
-.homepage-iphoneTwaalf {
+.homepagina .iphoneTwaalf {
   background-color: #fbfbfd;
   /*
   background-image: url("../images/homepage-iphone12Pro-verschillende-kleuren.jpg");
@@ -380,63 +342,65 @@ input[placeholder] {
   margin-top: 1em;
 }
 
-.homepage-iphoneTwaalf-tekst {}
+.homepagina .iphoneTwaalf-tekst {}
 
-.homepage-iphoneTwaalf-tekst p {
+.homepagina .iphoneTwaalf-tekst p {
   color: rgba(0, 0, 0, 0.6);
+
 }
 
-.homepage-iphoneTwaalf h2 {
+.homepagina .iphoneTwaalf h2 {
   padding-top: 1em;
+}
+
+.homepagina .iphoneTwaalf img {
+  width: 100%;
 }
 
 
 
 /* 3E CONTENT BLOK | Gifts */
 
-.homepage-iphoneTwaalf-gifts {
+.homepagina .iphoneTwaalf-gifts {
   background-color: #fbfbfd;
   margin-top: 1em;
 }
 
-.homepage-iphoneTwaalf-gifts img:first-of-type {
+.homepagina .iphoneTwaalf-gifts img:first-of-type {
   height: 3.4em;
   width: auto;
   margin-top: 2em;
 }
 
-.homepage-iphoneTwaalf-gifts h2 {
+.homepagina .iphoneTwaalf-gifts h2 {
   margin: 0.2em auto 0.5em auto;
   padding: 0em;
   width: 80%;
   color: black;
 }
 
-.homepage-iphoneTwaalf-gifts img:last-child {
+.homepagina .iphoneTwaalf-gifts img:last-child {
   height: 17em;
   width: auto;
   margin: 1em 0;
 }
 
-.wit {
-  height: 500px;
-}
 
 
 
 /* 4E CONTENT BLOK | HomePod mini */
 
-.homepage-homepod-mini {
+.homepagina .homepod-mini {
   background-color: #fbfbfd;
   margin-top: 1em;
 }
 
-.homepage-homepod-mini-tekst-link {
+.homepagina .homepod-mini-link {
   margin-top: 1.5em;
   padding-bottom: 2.5em;
 }
 
-.homepage-homepod-mini h2 {
+.homepagina .homepod-mini h2 {
   color: black;
 }
 
@@ -444,103 +408,120 @@ input[placeholder] {
 
 /* 5E CONTENT BLOK | MacBook Air */
 
-.homepage-macbook-air {
+.homepagina .macbook-air {
   background-color: black;
   margin-top: 1em;
 }
 
-.homepage-macbook-air h2 {
+.homepagina .macbook-air h2 {
   padding-top: 1em;
 }
 
-.homepage-macbook-air h3 {
+.homepagina .macbook-air h3 {
   margin-top: 0em;
 }
 
 
 /* 6E CONTENT BLOK | Apple One */
 
-.homepage-apple-one {
+.homepagina .apple-one {
   background-color: #fbfbfd;
   margin-top: 1em;
   color: black;
 }
 
-.homepage-apple-one img:first-of-type {
+.homepagina .apple-one img:first-of-type {
   height: 1.75em;
   width: auto;
   margin-top: 2em;
 }
 
 h2,
-.homepage-apple-one-tekst {
+.homepagina .apple-one-tekst {
   width: 60%;
 }
 
-h2 {
-  margin: 1em auto;
-}
-
-.homepage-apple-one img:last-of-type {
+.homepagina .apple-one img:last-of-type {
   height: 18.5em;
   width: auto;
   margin-top: 2em;
 }
 
-
+.apple-one h2 {
+  margin: 1em auto;
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
 
 
 /* 7E CONTENT BLOK | Apple News */
 
 
-.homepage-apple-news {
+.homepagina .apple-news {
   background-color: #FF2D55;
   margin-top: 1em;
   color: white;
 }
 
-.homepage-apple-news h2 {
+.homepagina .apple-news h2 {
   line-height: normal;
 }
 
-.homepage-apple-news-tekst-link a {
+.homepagina .apple-news-link a {
   color: white;
 }
 
-.homepage-apple-news-tekst-link a:hover {
+.homepagina .apple-news-link a:hover {
   text-decoration: underline white;
 }
 
-.homepage-apple-news img:first-of-type {
+.homepagina .apple-news img:first-of-type {
   height: 1.75em;
   width: auto;
   margin-top: 2em;
 }
 
+.apple-news h2 {
+  margin: 1em auto;
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
 
 
 
 /* 8E CONTENT BLOK | Apple Card */
 
 
-.homepage-apple-card {
+.homepagina .apple-card {
   background-color: #fbfbfd;
   margin-top: 1em;
   color: black;
 }
 
-.homepage-apple-card img:first-of-type {
+.homepagina .apple-card img:first-of-type {
   height: 2em;
   width: auto;
   margin-top: 2em;
 }
 
-.homepage-apple-card h2 {
+.homepagina .apple-card h2 {
   width: 50%;
   line-height: normal;
+  margin: 1em auto;
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -.022em;
 }
 
-.homepage-apple-one img:last-of-type {
+.homepagina .apple-one img:last-of-type {
   height: 18.5em;
   width: auto;
   margin-top: 2em;
@@ -551,7 +532,7 @@ h2 {
 /* 9E CONTENT BLOK | Apple TV */
 
 
-.homepage-apple-tv {
+.homepagina .apple-tv {
   background-image: url("../images/apple-tv-bg.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -561,24 +542,28 @@ h2 {
   background-color: #fbfbfd;
 }
 
-.homepage-apple-tv h2 {
-  line-height: normal;
+.homepagina .apple-tv h2 {
   margin: 0.5em auto;
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: normal;
+  font-weight: 400;
+  letter-spacing: -.022em;
 }
 
-.homepage-apple-tv-tekst-link a {
+.homepagina .apple-tv-link a {
   padding-bottom: 2em;
 }
 
 
-.homepage-apple-tv img:first-of-type {
+.homepagina .apple-tv img:first-of-type {
   height: 1.6em;
   width: auto;
   margin-top: 2.2em;
   padding-bottom: 13em;
 }
 
-.homepage-apple-tv img:last-of-type {
+.homepagina .apple-tv img:last-of-type {
   height: 4em;
   width: auto;
   margin-top: 2em;
@@ -611,16 +596,11 @@ h2 {
 .h3special {
   font-family: AppleFontTekst, Arial;
   font-size: 19px;
-  line-height: 1.47059;
+  line-height: 1.5;
   font-weight: 400;
   letter-spacing: -.022em;
 }
 
-@media (min-width: 1069px) {
-  .h2special {
-    font-size: 40px;
-  }
-}
 
 /*
 BLACK FRIDAY
@@ -651,10 +631,9 @@ BLACK FRIDAY
 
 
 
-/* PAGINA 12 | IPHONE */
-#main-content-iphone {
-  font-family: AppleFontTekst, Arial;
-}
+/* PAGINA 2 | IPHONE */
+
+
 
 .iphone-pagina-navbar {
   background-color: black;
@@ -664,38 +643,40 @@ BLACK FRIDAY
   background-color: #111113;
 }
 
-.header-bericht-1e-iphone {
+/*
+.header-bericht-iphone {
   padding: 0.5em;
 }
 
-.header-bericht-1e-iphone span {
+.header-bericht-iphone span {
   font-family: AppleFontText, Arial;
   font-size: 12px;
 }
 
-.header-bericht-1e-iphone a {
+.header-bericht-iphone a {
   font-size: 12px;
 }
+*/
 
-.header-bericht-2e-iphone {
+.header-bericht-iphone {
   background-color: #1D1D1F;
 }
 
-.header-bericht-2e-iphone span {
-  font-family: AppleFontText, Arial;
-  font-size: 12px;
-  width: 60%;
+.header-bericht-iphone p {
+  font-family: AppleFontTekst, Arial;
   margin: 0em auto;
+  width: 65%;
+  font-size: 12px;
 }
 
-.header-bericht-2e-iphone a {
+.header-bericht-iphone a {
   font-size: 12px;
-  color: #2997FF;
+  color: #0071e3;
   display: block;
 }
 
-.header-bericht-2e-iphone a:hover {
-  text-decoration: underline #2997FF;
+.header-bericht-iphone a:hover {
+  text-decoration: underline #0071e3;
 }
 
 .product-nav ul {
@@ -759,15 +740,65 @@ BLACK FRIDAY
 }
 
 
-@media (min-width: 735px) {
-  .product-nav ul {
-    justify-content: center;
-  }
-
-  .header-bericht-2e-iphone a {
-    display: inline-block;
-  }
+.iphone .iphone12-pro {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
+
+.iphone .iphone12-pro h1 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  padding-top: 2em;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-bottom: -0.5em;
+}
+
+.iphone .iphone12-pro h2 {
+  font-size: 38px;
+  font-weight: 600;
+  margin: 0.5em auto;
+  margin-bottom: 0.25em;
+}
+
+.iphone .iphone12-pro p {
+  font-size: 17px;
+  /*  margin: 0.5em auto;*/
+  width: 50%;
+  margin: auto;
+  color: #F5F5F7;
+}
+
+
+.iphone .iphone12-pro a {
+  text-decoration: none;
+  color: #0071e3;
+  font-size: 17px;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.iphone .iphone12-pro a:first-of-type {
+  background-color: #0071e3;
+  color: white;
+  padding: 0.5em 0.75em;
+  display: block;
+  margin: 1em auto;
+  width: 2em;
+  border-radius: 1em;
+}
+
+.iphone .iphone12-pro a:hover {
+  text-decoration: underline #0071e3;
+}
+
+
+
+
+
 
 /*
 @keyframes test {
@@ -789,7 +820,107 @@ BLACK FRIDAY
 }
 */
 
+
+
+
+
 body.menuOpen #hamburger-menu span:last-of-type {
 
   transform: translatey(0) rotate(-45deg);
+}
+
+
+.wit {
+  height: 500px;
+}
+
+
+
+/* Media Queryss */
+
+
+
+/* Linkjes width verkleinen bij breakpoint */
+
+/*Titels groter maken*/
+
+
+@media (min-width: 735px) {
+  .product-nav ul {
+    justify-content: center;
+  }
+
+  .header-bericht-2e-iphone a {
+    display: inline-block;
+  }
+}
+
+
+@media (min-width: 1069px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 735px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex > .contentblok {
+    width: 50%;
+  }
+
+  #hamburger-menu-uitgeklapt {
+    display: none;
+  }
+}
+
+.flex {}
+
+@media (min-width: 1069px) {
+  .h2special {
+    font-size: 40px;
+  }
+}
+
+
+
+@media (min-width: 1069px) {
+  .homepagina .iphoneTwaalf-link {
+    display: flex;
+    justify-content: space-around;
+    width: 37.5%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1469px) {
+  .homepagina .contentblok-link {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: auto;
+  }
+}
+
+.homepagina .contentblok img {
+  width: 100%;
+}
+
+
+/* Display none iphone 12 image */
+
+@media (min-width: 735px) {
+  .homepagina .contentblok img {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1069px) {
+  .homepagina .contentblok img {
+    width: 40%;
+  }
 }
