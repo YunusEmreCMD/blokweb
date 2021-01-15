@@ -7,6 +7,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 1. https://www.apple.com/
+2. https://css-tricks.com/almanac/properties/b/backdrop-filter/
+3. https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_gen_sibling
+4. https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page
+5. https://codepen.io/shooft/pen/jOMOroZ
 
 
 
@@ -22,21 +26,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Voortgangsgesprek ging goed, geen opmerkingen. Ik ben verder gegaan met pagina 2.
 
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
-
+Voortgangsgesprek ging goed, weinig dat fout ging, ik had articles en sections door elkaar gehaald daar kreeg ik kritiek op (naja kritiek, dat was een minpunt), dus dat heb ik gefixt. Ook een klein begin gemaakt aan pagina 2.
 
 
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Er was niet zo zeer iets lastig, ik ben eerst begonenne met het maken van breakdown-schetsen en daarna ben ik langzamerhand begonnen met het maken van de eerste pagina.
 
 **Screenshot(s):**
 
