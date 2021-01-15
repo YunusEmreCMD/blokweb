@@ -56,7 +56,7 @@ sup {
 }
 
 nav {
-  background-color: #323232;
+  background-color: rgba(50, 50, 50, 0.90);
   /*  backdrop-filter: blur(5px);*/
   display: flex;
   justify-content: space-between;
@@ -67,6 +67,8 @@ nav {
   left: 0;
   //z-index: 2;
   transition: 1s;
+  -webkit-backdrop-filter: blur(0.5em);
+  backdrop-filter: blur(0.5em);
 }
 
 body.menuOpen nav {
@@ -103,6 +105,47 @@ nav button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+
+
+.desktop-nav {
+  font-family: AppleFontTekst, Arial;
+  background-color: rgba(50, 50, 50, 0.9);
+  padding: 0em 1.5em;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 14px;
+  display: none;
+}
+
+.desktop-nav img {
+  height: 3.3em;
+  vertical-align: middle;
+}
+
+.desktop-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-nav ul li {
+  margin: auto 0;
+}
+
+.desktop-nav a {
+  color: #F5F5F7;
+  text-decoration: none;
+}
+
+.desktop-nav a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 #hamburger-menu span {
@@ -274,13 +317,13 @@ input[placeholder] {
 
 /*1E CONTENT BLOK | Intro Homepage */
 
-.homepagina .contentblok {
+.contentblok {
   text-align: center;
   background-color: black;
   color: white;
 }
 
-.homepagina .contentblok h1 {
+.contentblok h1 {
   padding-top: 1em;
   margin-bottom: -0.5em;
 }
@@ -295,29 +338,28 @@ input[placeholder] {
   letter-spacing: -.022em;
 }
 
-.homepagina .contentblok-tekst {
-  width: 40%;
-  margin: auto;
+.intro-iphone12 p {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.homepagina .contentblok-link {
+.intro-iphone12 h3 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contentblok-link {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  max-width: 15em;
   margin: auto;
 }
 
-.homepagina .contentblok-link a {
+.contentblok-link a {
   text-decoration: none;
   color: #0071e3;
   font-size: 17px;
-  line-height: 1.21053;
-  font-weight: 400;
-  letter-spacing: -0.05em;
 }
 
-.homepagina .contentblok-link a:hover {
+.contentblok-link a:hover {
   text-decoration: underline #0071e3;
 }
 
@@ -342,21 +384,22 @@ input[placeholder] {
   margin-top: 1em;
 }
 
-.homepagina .iphoneTwaalf-tekst {}
-
-.homepagina .iphoneTwaalf-tekst p {
+.homepagina .iphoneTwaalf p {
   color: rgba(0, 0, 0, 0.6);
-
 }
 
 .homepagina .iphoneTwaalf h2 {
   padding-top: 1em;
 }
 
-.homepagina .iphoneTwaalf img {
-  width: 100%;
+.homepagina .iphoneTwaalf h3 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  margin: 0.5em;
 }
-
 
 
 /* 3E CONTENT BLOK | Gifts */
@@ -373,10 +416,16 @@ input[placeholder] {
 }
 
 .homepagina .iphoneTwaalf-gifts h2 {
-  margin: 0.2em auto 0.5em auto;
+  margin: 0.2em 2em 0.5em;
   padding: 0em;
-  width: 80%;
   color: black;
+}
+
+.iphoneTwaalf-gifts a {
+  text-decoration: none;
+  color: #0071e3;
+  font-size: 17px;
+  display: block;
 }
 
 .homepagina .iphoneTwaalf-gifts img:last-child {
@@ -418,7 +467,12 @@ input[placeholder] {
 }
 
 .homepagina .macbook-air h3 {
-  margin-top: 0em;
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  margin: 0.5em;
 }
 
 
@@ -434,11 +488,6 @@ input[placeholder] {
   height: 1.75em;
   width: auto;
   margin-top: 2em;
-}
-
-h2,
-.homepagina .apple-one-tekst {
-  width: 60%;
 }
 
 .homepagina .apple-one img:last-of-type {
@@ -511,7 +560,6 @@ h2,
 }
 
 .homepagina .apple-card h2 {
-  width: 50%;
   line-height: normal;
   margin: 1em auto;
   font-family: AppleFontTekst, Arial;
@@ -540,6 +588,7 @@ h2,
   margin-top: 1em;
   color: black;
   background-color: #fbfbfd;
+  padding-top: 2em;
 }
 
 .homepagina .apple-tv h2 {
@@ -559,8 +608,9 @@ h2,
 .homepagina .apple-tv img:first-of-type {
   height: 1.6em;
   width: auto;
-  margin-top: 2.2em;
   padding-bottom: 13em;
+  display: block;
+  margin: auto;
 }
 
 .homepagina .apple-tv img:last-of-type {
@@ -582,23 +632,14 @@ h2,
 */
 
 
-.h2special {
-  font-family: AppleFontTekst, Arial;
-  font-size: 32px;
-  margin: 0;
-  line-height: 1.125;
-  font-weight: 600;
-  letter-spacing: .004em;
-  width: auto;
-}
-
-
 .h3special {
+  /*
   font-family: AppleFontTekst, Arial;
   font-size: 19px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: -.022em;
+*/
 }
 
 
@@ -665,14 +706,13 @@ BLACK FRIDAY
 .header-bericht-iphone p {
   font-family: AppleFontTekst, Arial;
   margin: 0em auto;
-  width: 65%;
+  width: 60%;
   font-size: 12px;
 }
 
 .header-bericht-iphone a {
   font-size: 12px;
   color: #0071e3;
-  display: block;
 }
 
 .header-bericht-iphone a:hover {
@@ -682,7 +722,7 @@ BLACK FRIDAY
 .product-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0em 1em;
+  padding: 1em 1.5em 0.5em;
   display: flex;
   justify-content: flex-start;
   overflow-y: hidden;
@@ -692,40 +732,15 @@ BLACK FRIDAY
   display: none;
 }
 
-/*
-.product-nav ul li a{
-  text-align: center;
-}
-*/
-
-/*
-.product-nav ul li a figure {
-  margin: 0;
-  padding: 0;
-}
-*/
-
-/*
-.product-nav ul li a figure:nth-child(1) {
-  margin: 0;
-  padding: 0;
-  height: 2em;
-  background-image: url("../images/product-navigatie/iphone-pro-icon.svg");
-  background-size: 37px 54px;
-  background-repeat: no-repeat;
-  width: 37px;
-}
-*/
-
 .product-nav ul li {
   text-align: center;
-  padding: 0em 0em 1em 0em;
+  padding-bottom: 0.5em;
   min-width: 6em;
 }
 
 .product-nav ul li a img {
   /*  transform: scale(0.5);*/
-  height: 4em;
+  height: 3.5em;
 }
 
 .product-nav ul li a {
@@ -737,16 +752,30 @@ BLACK FRIDAY
   color: white;
   font-size: 12px;
   display: block;
+  padding-top: 0.5em;
 }
 
 
-.iphone .iphone12-pro {
+.product-nav ul li a span:hover {
+  color: #0071e3;
+}
+
+.product-nav ul li > span:last-child {
+  font-size: 10px;
+  color: #f56300;
+}
+
+.iphone {
+  background-color: #F2F2F2;
+}
+
+.iphone .contentblok {
   background-color: black;
   color: white;
   text-align: center;
 }
 
-.iphone .iphone12-pro h1 {
+.iphone .contentblok h1 {
   font-family: AppleFontTekst, Arial;
   font-size: 19px;
   padding-top: 2em;
@@ -756,32 +785,31 @@ BLACK FRIDAY
   margin-bottom: -0.5em;
 }
 
-.iphone .iphone12-pro h2 {
+.iphone .contentblok h2 {
   font-size: 38px;
   font-weight: 600;
   margin: 0.5em auto;
   margin-bottom: 0.25em;
 }
 
-.iphone .iphone12-pro p {
+.iphone .contentblok p {
   font-size: 17px;
   /*  margin: 0.5em auto;*/
-  width: 50%;
   margin: auto;
   color: #F5F5F7;
 }
 
 
-.iphone .iphone12-pro a {
+.iphone .contentblok a {
   text-decoration: none;
   color: #0071e3;
   font-size: 17px;
-  line-height: 1.21053;
+  line-height: 1.2;
   font-weight: 400;
   letter-spacing: -0.05em;
 }
 
-.iphone .iphone12-pro a:first-of-type {
+.iphone .iphone-twaalf-gen a:first-of-type {
   background-color: #0071e3;
   color: white;
   padding: 0.5em 0.75em;
@@ -791,13 +819,461 @@ BLACK FRIDAY
   border-radius: 1em;
 }
 
-.iphone .iphone12-pro a:hover {
+.iphone .contentblok a:hover {
   text-decoration: underline #0071e3;
+}
+
+.iphone .contentblok img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+
+/* IPHONE PAGINA - IPHONE 12 GENS */
+
+.iphone .iphone-twaalf-gen {
+  background-color: #fbfbfd;
+  color: black;
+}
+
+.iphone .iphone-twaalf-gen p {
+  color: black;
+}
+
+.iphone .iphone-twaalf-gen img {
+  width: 100%;
+}
+
+
+/* IPHONE PAGINA - IPHONE 12 PRO */
+
+.iphone .iphone-twaalf-pro h2 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  padding-top: 2em;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin: 0;
+  padding-top: 3em;
+  margin-bottom: -0.5em;
+}
+
+.iphone .iphone-twaalf-pro h3 {
+  font-size: 38px;
+  font-weight: 600;
+  margin: 0.5em auto;
+  margin-bottom: 0.25em;
+}
+
+.iphone .iphone-twaalf-pro img {
+  margin-top: 3em;
+}
+
+.iphone .iphone-twaalf-pro {
+  padding-bottom: 3em;
+}
+
+.iphone .iphone-twaalf-pro a:first-of-type {
+  background-color: #0071e3;
+  color: white;
+  padding: 0.5em 0.75em;
+  display: block;
+  margin: 1em auto;
+  width: 2em;
+  border-radius: 1em;
+}
+
+
+/* IPHONE COMPARE  */
+
+.iphone .iphone-compare {
+  background-color: white;
+  color: black;
+}
+
+.iphone .iphone-compare .alle-vergelijk-modellen {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 3em;
+  justify-content: space-around;
+  max-width: 30em;
+  margin: auto;
+}
+
+.iphone .iphone-compare h2 {
+  font-size: 32px;
+  margin: 0;
+  padding: 3em 0 0.5em;
+}
+
+.iphone .iphone-compare p {
+  color: black;
+  font-size: 14px;
+}
+
+.iphone .iphone-compare a {
+  font-size: 19px;
+}
+
+.iphone .iphone-compare article {
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 5em;
+  width: 50%;
+}
+
+.iphone .iphone-compare h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.iphone .iphone-compare span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.compare-iphone12-pro span {
+  font-weight: 400;
+}
+
+.iphone .iphone-compare ul {
+  margin: 0;
+  padding: 1.5em 0;
+  max-width: 10em;
+}
+
+.iphone .iphone-compare ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.iphone .iphone-compare article a {
+  font-size: 14px;
+}
+
+.iphone .iphone-compare article a:first-of-type {
+  font-size: 12px;
+  display: block;
+  width: 4em;
+  text-align: center;
+  padding: 0.5em 0;
+  margin-bottom: 2em;
+  color: white;
+  background-color: #0071e3;
+  border-radius: 5em;
+}
+
+.iphone .iphone-compare img {
+  width: auto;
+  margin: 0;
 }
 
 
 
 
+
+/* IPHONE PAGINA - GRIJS BLOK */
+
+.ways-to-buy {
+  max-width: 90em;
+  margin: auto;
+}
+
+.retail {
+  text-align: center;
+  padding-top: 6em;
+}
+
+.retail h2 {
+  color: black;
+  padding-bottom: 1em;
+}
+
+/* IPHONE PAGINA - IPHONE 12 APPLE CARD */
+
+.iphone .iphone-artikel {
+  background-color: white;
+  color: black;
+  padding: 2em 0;
+  margin-bottom: 1em;
+}
+
+.iphone .iphone-artikel h2 {
+  font-size: 32px;
+}
+
+.iphone .iphone-artikel h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0.5em auto;
+  margin-bottom: 0.25em;
+}
+
+.iphone .iphone-artikel p {
+  color: black;
+  margin-bottom: 1em;
+}
+
+.iphone .iphone-artikel img {
+  width: 70%;
+  margin-top: 2em;
+}
+
+.iphone .apple-credit img {
+  width: 90%;
+}
+
+.iphone .apple-upgrade img {
+  padding-top: 2em;
+}
+
+.featured-accesories {
+  max-width: 75em;
+  margin: auto;
+}
+
+.iphone .magsafe img {
+  width: 50%;
+}
+
+
+.iphone .airpods .airpods-link {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: auto;
+}
+
+.airpods .airpods-content a {
+  padding: 0.5em;
+}
+
+.benefits {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 75em;
+}
+
+.benefits article {
+  margin-bottom: 5em;
+  min-width: 25em;
+}
+
+.benefits h2 {
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits p {
+  font-size: 17px;
+  margin: 0.5em 0;
+}
+
+.benefits a {
+  text-decoration: none;
+  color: #0071e3;
+  font-size: 17px;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.benefits > a {
+  font-size: 21px;
+  padding-bottom: 4em;
+  width: 100%;
+}
+
+.benefits a:hover {
+  text-decoration: underline #0071e3;
+}
+
+
+
+@media (min-width: 735px) {
+
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav ul {
+    max-width: 70em;
+    margin: auto;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .flex2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .iphone-artikel {
+    margin: 0 1em;
+  }
+
+  .flex2 .iphone-artikel {
+    width: calc(50% - 2em);
+  }
+
+
+
+
+
+
+
+  .iphone-apple-card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .iphone-apple-card .apple-card-content {
+    margin: auto;
+  }
+
+  .iphone-apple-card img {
+    margin: auto;
+    max-width: 40%;
+  }
+
+  .iphone .apple-credit img {
+    width: 100%;
+  }
+
+  .iphone .iphone-artikel img {
+    width: 100%;
+  }
+
+  .iphone .iphone-twaalf-gen img {
+    width: 60%;
+  }
+
+  .iphone .iphone-twaalf-pro img {
+    width: 20%;
+  }
+
+  .iphone .magsafe img {
+    width: 35%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .iphone .airpods img {
+    width: 40%;
+    margin: auto 0;
+  }
+
+  .magsafe {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .magsafe-content {
+    margin: auto 0;
+  }
+
+  .airpods {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .airpods-content {
+    padding: 5em 0;
+  }
+
+  .iphone .airpods .airpods-link {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin: auto;
+  }
+
+  .benefits {
+    flex-direction: row;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+.iphone .contentblok img {
+  display: block;
+  margin: 2em auto;
+}
+*/
+
+
+
+
+/*
+.iphone .iphone12-pro2 h1 {
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  padding-top: 2em;
+}
+
+.iphone .iphone12-pro2 h2 {
+  font-size: 38px;
+  font-weight: 600;
+  margin: 0.5em auto;
+  margin-bottom: 0.25em;
+}
+
+.iphone .iphone12-pro2 p {
+  font-size: 17px;
+  margin: 0.5em auto;
+  width: 50% ;
+  color: #F5F5F7;
+}
+
+.iphone .iphone12-pro2 a {
+  text-decoration: none;
+  color: #0071e3;
+  font-size: 17px;
+  line-height: 1.21053;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  display: block;
+}
+
+.iphone .iphone12-pro2 a:first-of-type {
+  background-color: #0071e3;
+  color: white;
+  padding: 0.5em 0.75em;
+  display: block;
+  margin: 1em auto;
+  width: 2em;
+  border-radius: 1em;
+}
+
+.iphone .iphone12-pro2 a:hover {
+  text-decoration: underline #0071e3;
+}
+*/
 
 
 /*
@@ -878,16 +1354,8 @@ body.menuOpen #hamburger-menu span:last-of-type {
   }
 }
 
-.flex {}
 
-@media (min-width: 1069px) {
-  .h2special {
-    font-size: 40px;
-  }
-}
-
-
-
+/*
 @media (min-width: 1069px) {
   .homepagina .iphoneTwaalf-link {
     display: flex;
@@ -898,15 +1366,16 @@ body.menuOpen #hamburger-menu span:last-of-type {
 }
 
 @media (min-width: 1469px) {
-  .homepagina .contentblok-link {
+  .contentblok-link {
     display: flex;
     justify-content: space-around;
     width: 30%;
     margin: auto;
   }
 }
+*/
 
-.homepagina .contentblok img {
+.contentblok img {
   width: 100%;
 }
 
@@ -914,13 +1383,22 @@ body.menuOpen #hamburger-menu span:last-of-type {
 /* Display none iphone 12 image */
 
 @media (min-width: 735px) {
-  .homepagina .contentblok img {
+  .contentblok img {
     width: 65%;
   }
 }
 
 @media (min-width: 1069px) {
-  .homepagina .contentblok img {
+  .contentblok img {
     width: 40%;
+  }
+
+  .iphone .iphone-compare .alle-vergelijk-modellen {
+    max-width: 55em;
+  }
+
+  .iphone .iphone-compare article {
+    padding: 0 1em;
+    width: calc(25% - 2em);
   }
 }
