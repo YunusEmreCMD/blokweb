@@ -148,6 +148,11 @@ nav button {
   text-decoration: none;
 }
 
+.iphone .desktop-nav {
+  background-color: black;
+  position: static;
+}
+
 #hamburger-menu span {
   position: absolute;
   width: 1.25em;
