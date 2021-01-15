@@ -73,7 +73,7 @@ Dus check mijn breakdownpagina :) <a href="https://yunusemrecmd.github.io/blokwe
 
 **Je startniveau:** Zwart (Ben eignlk rood, maar ik sta open voor een uitdaging :)
 
-**Je focus:** Ik ga de website responsive maken, en proberen ook meer aandacht te besteden aan de surface laag
+**Je focus:** Ik ga de website volledig responsive maken, alleen niet voor de apple watch.
 
 **Je opdracht:** <a href="https://www.apple.com/">Apple.com</a>
 
