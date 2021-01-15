@@ -20,7 +20,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-<img src="images/eindresultaat-homepagina.png" width="375px" alt="Eindresultaat homepagina">
+<img src="images/eindresultaat-homepagina.PNG" width="375px" alt="Eindresultaat homepagina">
+<img src="images/eindresultaat-iphone-pagina.PNG" width="375px" alt="Eindresultaat iPhone pagina">
 
 
 
