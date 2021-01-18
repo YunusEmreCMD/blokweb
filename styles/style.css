@@ -59,7 +59,6 @@ sup {
 
 nav {
   background-color: rgba(50, 50, 50, 0.90);
-  /*  backdrop-filter: blur(5px);*/
   display: flex;
   justify-content: space-between;
   padding: 0em 1em;
@@ -71,6 +70,7 @@ nav {
   transition: 1s;
   -webkit-backdrop-filter: blur(0.5em);
   backdrop-filter: blur(0.5em);
+  /*  https://css-tricks.com/almanac/properties/b/backdrop-filter/*/
 }
 
 body.menuOpen nav {
@@ -125,6 +125,7 @@ nav button {
   display: none;
   -webkit-backdrop-filter: blur(0.5em);
   backdrop-filter: blur(0.5em);
+  /* https://css-tricks.com/almanac/properties/b/backdrop-filter/  */
 }
 
 #hamburger-menu span {
@@ -344,7 +345,7 @@ body.menuOpen #hamburger-menu span:last-of-type {
 
 .contentblok h1 ~ h2 {
   margin: 1em auto;
-  /*  https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_gen_sibling*/
+  /*  https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_gen_sibling */
   font-family: AppleFontTekst, Arial;
   font-size: 19px;
   line-height: 1.5;
@@ -1063,19 +1064,16 @@ BLACK FRIDAY
   margin-bottom: 0.5em;
 }
 
-.iphone .iphone-compare span {
+.iphone .iphone-compare h3 ~ span {
   font-size: 14px;
   font-weight: 600;
-}
-
-.compare-iphone12-pro span {
-  font-weight: 400;
 }
 
 .iphone .iphone-compare ul {
   margin: 0;
   padding: 1.5em 0;
   max-width: 10em;
+  padding-top: 1em;
 }
 
 .iphone .iphone-compare ul li {
@@ -1101,9 +1099,143 @@ BLACK FRIDAY
 }
 
 .iphone .iphone-compare img {
-  width: auto;
+  width: 50%;
   margin: 0;
 }
+
+
+
+/* iPhone kleuren */
+
+.kleuren-bollen {
+  /*  padding-top: 1em;*/
+  padding-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 7.5em;
+}
+
+
+.iphone-compare .kleuren-bollen span {
+  height: 1.75em;
+  width: 1.75em;
+  background-color: black;
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border: 2px solid white;
+}
+
+.iphone-compare .kleuren-bollen span:hover {
+  border: 2px solid white;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* iPhone 12 pro kleuren */
+
+.iphone12-pro-kleuren span:first-of-type {
+  background-color: #5B5956;
+}
+
+.iphone12-pro-kleuren span:nth-child(2) {
+  background-color: #2d4e5c;
+}
+
+.iphone12-pro-kleuren span:nth-child(3) {
+  background-color: #e3ccb4;
+}
+
+.iphone12-pro-kleuren span:nth-child(4) {
+  background-color: #E4E5E1;
+}
+
+
+
+/* iPhone 12 kleuren */
+
+.iphone12-kleuren span:first-of-type {
+  background-color: #2d4e5c;
+}
+
+.iphone12-kleuren span:nth-child(2) {
+  background-color: #D8EFD5;
+}
+
+.iphone12-kleuren span:nth-child(3) {
+  background-color: #D82E2E;
+}
+
+.iphone12-kleuren span:nth-child(4) {
+  background-color: #F5F5F7;
+}
+
+.iphone12-kleuren span:nth-child(5) {
+  background-color: #25212B;
+}
+
+
+
+/* iPhone 11 pro kleuren */
+
+.iphone11-pro-kleuren span:first-of-type {
+  background-color: #4E5851;
+}
+
+.iphone11-pro-kleuren span:nth-child(2) {
+  background-color: #EBEBE3;
+}
+
+.iphone11-pro-kleuren span:nth-child(3) {
+  background-color: #535150;
+}
+
+.iphone11-pro-kleuren span:nth-child(4) {
+  background-color: #FAD7BD;
+}
+
+
+
+/* iPhone 11 kleuren */
+
+.iphone11-kleuren span:first-of-type {
+  background-color: #D1CDDA;
+}
+
+.iphone11-kleuren span:nth-child(2) {
+  background-color: #FFE681;
+}
+
+.iphone11-kleuren span:nth-child(3) {
+  background-color: #AEE1CD;
+}
+
+.iphone11-kleuren span:nth-child(4) {
+  background-color: #1F2020;
+}
+
+.iphone11-kleuren span:nth-child(5) {
+  background-color: #F9F6EF;
+}
+
+.iphone11-kleuren span:nth-child(6) {
+  background-color: #BA0C2E;
+}
+
+
+.iphone11-kleuren {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 7.5em;
+}
+
+.iphone11-kleuren div {
+  width: 33%;
+}
+
 
 
 
@@ -1384,6 +1516,23 @@ BLACK FRIDAY
   .benefits {
     flex-direction: row;
   }
+
+  .iphone11-kleuren {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .iphone11-kleuren div {
+    width: auto;
+  }
+
+  .iphone-compare .kleuren-bollen span {
+    height: 1.25em;
+    width: 1.25em;
+  }
+
 }
 
 
