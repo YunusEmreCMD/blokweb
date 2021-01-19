@@ -1082,7 +1082,28 @@ BLACK FRIDAY
   margin: 0;
 }
 
-.iphone .iphone-compare ul:first-of-type {}
+/*
+.iphone .iphone-compare .iphone12-compare li:nth-last-of-type(2) p{
+  padding: 1.34em 0;
+}
+
+.iphone .iphone-compare .iphone11-pro-compare li:nth-last-of-type(2) p{
+  padding: 1.34em 0;
+}
+
+.iphone .iphone-compare .iphone11-pro-compare li:last-of-type p{
+  padding: 0.6em 0;
+}
+
+.iphone .iphone-compare .iphone11-compare li:nth-last-of-type(2) p{
+  padding: 1.34em 0;
+}
+
+.iphone .iphone-compare .iphone11-compare li:last-of-type p{
+  padding: 0.6em 0;
+}
+*/
+
 
 .iphone .iphone-compare ul:first-of-type li {
   list-style: none;
@@ -1145,10 +1166,6 @@ BLACK FRIDAY
 
 /* iPhone 12 pro kleuren */
 
-.iphone12-pro-kleuren{
-  padding-bottom: 2.25em;
-}
-
 .iphone12-pro-kleuren li:first-of-type span {
   background-color: #5B5956;
 }
@@ -1163,6 +1180,7 @@ BLACK FRIDAY
 
 .iphone12-pro-kleuren li:nth-child(4) span {
   background-color: #E4E5E1;
+  margin-bottom: 2.32em;
 }
 
 
@@ -1207,6 +1225,7 @@ BLACK FRIDAY
 
 .iphone11-pro-kleuren li:nth-child(4) span {
   background-color: #FAD7BD;
+  margin-bottom: 2.32em;
 }
 
 
@@ -1535,6 +1554,16 @@ BLACK FRIDAY
     padding: 0;
     margin: 0;
     width: 33%;
+  }
+
+  .iphone12-pro-kleuren li:nth-child(4) span {
+    background-color: #E4E5E1;
+    margin-bottom: 0em;
+  }
+
+  .iphone11-pro-kleuren li:nth-child(4) span {
+    background-color: #FAD7BD;
+    margin-bottom: 0em;
   }
 
 }
