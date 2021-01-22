@@ -144,6 +144,7 @@ nav button {
   -webkit-backdrop-filter: blur(0.5em);
   backdrop-filter: blur(0.5em);
   /* https://css-tricks.com/almanac/properties/b/backdrop-filter/  */
+  z-index: 5;
 }
 
 #hamburger-menu span {
