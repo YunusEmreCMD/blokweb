@@ -292,9 +292,10 @@ if (body.classList.contains("iphone")) {
 
 // Shop and Learn
 
-var ShopAndLearn = document.getElementById("shop-and-learn");
+var shopAndLearn = document.getElementById("shop-and-learn");
 
-ShopAndLearn.addEventListener("click", openShopAndLearn);
+shopAndLearn.addEventListener("click", openShopAndLearn);
+shopAndLearn.addEventListener('keydown', openShopAndLearn);
 
 function openShopAndLearn() {
   var shopAndLearnContent = document.querySelector("#shop-and-learn ul");
@@ -308,7 +309,9 @@ function openShopAndLearn() {
 // Services
 
 var services = document.getElementById("services");
+
 services.addEventListener("click", openServices);
+services.addEventListener('keydown', openServices);
 
 function openServices() {
   var servicesContent = document.querySelector("#services ul");
@@ -322,7 +325,9 @@ function openServices() {
 // Account
 
 var account = document.getElementById("account");
+
 account.addEventListener("click", openAccount);
+account.addEventListener('keydown', openAccount);
 
 function openAccount() {
   var accountContent = document.querySelector("#account ul");
@@ -336,7 +341,10 @@ function openAccount() {
 // Apple Store
 
 var appleStore = document.getElementById("apple-store");
+
 appleStore.addEventListener("click", openAppleStore);
+appleStore.addEventListener('keydown', openAppleStore);
+
 function openAppleStore() {
   var appleStoreContent = document.querySelector("#apple-store ul");
   appleStoreContent.classList.toggle("active");
@@ -349,7 +357,10 @@ function openAppleStore() {
 // For Business
 
 var forBusiness = document.getElementById("for-business");
+
 forBusiness.addEventListener("click", openForBusiness);
+forBusiness.addEventListener('keydown', openForBusiness);
+
 function openForBusiness() {
   var forBusinessContent = document.querySelector("#for-business ul");
   forBusinessContent.classList.toggle("active");
@@ -362,7 +373,10 @@ function openForBusiness() {
 // For Education
 
 var forEducation = document.getElementById("for-education");
+
 forEducation.addEventListener("click", openForEducation);
+forEducation.addEventListener('keydown', openForEducation);
+
 function openForEducation() {
   var forEducationContent = document.querySelector("#for-education ul");
   forEducationContent.classList.toggle("active");
@@ -375,7 +389,10 @@ function openForEducation() {
 // For Government
 
 var forGovernment = document.getElementById("for-government");
+
 forGovernment.addEventListener("click", openForGovernment);
+forGovernment.addEventListener('keydown', openForGovernment);
+
 function openForGovernment() {
   var forGovernmentContent = document.querySelector("#for-government ul");
   forGovernmentContent.classList.toggle("active");
@@ -388,7 +405,10 @@ function openForGovernment() {
 // Apple Values
 
 var appleValues = document.getElementById("apple-values");
+
 appleValues.addEventListener("click", openAppleValues);
+appleValues.addEventListener('keydown', openAppleValues);
+
 function openAppleValues() {
   var appleValuesContent = document.querySelector("#apple-values ul");
   appleValuesContent.classList.toggle("active");
@@ -401,7 +421,10 @@ function openAppleValues() {
 // About Apple
 
 var aboutApple = document.getElementById("about-apple");
+
 aboutApple.addEventListener("click", openAboutApple);
+aboutApple.addEventListener('keydown', openAboutApple);
+
 function openAboutApple() {
   var aboutAppleContent = document.querySelector("#about-apple ul");
   aboutAppleContent.classList.toggle("active");
@@ -411,13 +434,13 @@ function openAboutApple() {
 }
 
 
-ShopAndLearn.addEventListener('keydown', openShopAndLearn);
-services.addEventListener('keydown', openServices);
-account.addEventListener('keydown', openAccount);
-appleStore.addEventListener('keydown', openAppleStore);
-forBusiness.addEventListener('keydown', openForBusiness);
-forEducation.addEventListener('keydown', openForEducation);
-forGovernment.addEventListener('keydown', openForGovernment);
-appleValues.addEventListener('keydown', openAppleValues);
-aboutApple.addEventListener('keydown', openAboutApple);
+
+
+
+
+
+
+
+
+
 
