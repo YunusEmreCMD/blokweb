@@ -411,4 +411,13 @@ function openAboutApple() {
 }
 
 
-console.log("hoi");
+ShopAndLearn.addEventListener('keydown', openShopAndLearn);
+services.addEventListener('keydown', openServices);
+account.addEventListener('keydown', openAccount);
+appleStore.addEventListener('keydown', openAppleStore);
+forBusiness.addEventListener('keydown', openForBusiness);
+forEducation.addEventListener('keydown', openForEducation);
+forGovernment.addEventListener('keydown', openForGovernment);
+appleValues.addEventListener('keydown', openAppleValues);
+aboutApple.addEventListener('keydown', openAboutApple);
+
