@@ -14,20 +14,6 @@ body {
   overflow-y: scroll;
 }
 
-/*
-@keyframes fade-in-body {
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-*/
-
 
 /* STANDAARD WAARDES */
 
@@ -42,7 +28,6 @@ h1 {
   line-height: 1.125;
   font-weight: 600;
   letter-spacing: -0.025em;
-  /*  animation: fade-in-body 1s ease;*/
 }
 
 h2 {
@@ -67,6 +52,25 @@ sup {
   font-size: 8px;
 }
 
+.homepagina h2 {
+  animation: animation-Y-normal 1s ease;
+}
+
+.homepagina h3 {
+  animation: animation-Y-normal 1.25s ease;
+}
+
+.homepagina .contentblok img {
+  animation: animation-X-normal 1.5s ease;
+}
+
+.homepagina .contentblok a,
+#footer-mobile {
+  animation: animation-Y-normal 1.5s ease;
+  z-index: 1;
+}
+
+
 
 /* MOBILE NAVIGATIE */
 
@@ -79,7 +83,6 @@ nav {
   top: 0;
   right: 0;
   left: 0;
-  //z-index: 2;
   transition: 1s;
   -webkit-backdrop-filter: blur(0.5em);
   backdrop-filter: blur(0.5em);
@@ -87,21 +90,23 @@ nav {
 }
 
 body.menuOpen nav {
-  z-index: 2;
+  z-index: 3;
   background-color: black;
 }
 
-nav a img {
+nav a svg {
   height: 3.1em;
   color: #FFFFFE;
   vertical-align: middle;
 }
 
-body.menuOpen .test {
-  /*  display: none;*/
+.svg-achtergrond {
+  fill: none;
 }
 
-
+svg {
+  fill: #fff;
+}
 
 /* HAMBURGER MENU */
 /*https://codepen.io/shooft/pen/jOMOroZ*/
@@ -258,10 +263,10 @@ body.menuOpen #hamburger-menu span:last-of-type {
   transform: translateY(-100%);
   /*  transition: 0.5s;*/
   transition: 1s ease-in-out;
-  z-index: 1;
+  z-index: 2;
 }
 
-.desktop-nav img {
+.desktop-nav svg {
   height: 3.3em;
   vertical-align: middle;
 }
@@ -372,6 +377,7 @@ body.menuOpen #hamburger-menu span:last-of-type {
 
 .intro-iphone12 p {
   color: rgba(255, 255, 255, 0.5);
+  animation: animation-Y-normal 1.5s ease;
 }
 
 .intro-iphone12 h3 {
@@ -417,6 +423,7 @@ body.menuOpen #hamburger-menu span:last-of-type {
 
 .homepagina .iphoneTwaalf p {
   color: rgba(0, 0, 0, 0.6);
+  animation: animation-Y-normal 1.5s ease;
 }
 
 .homepagina .iphoneTwaalf h2 {
@@ -445,12 +452,14 @@ body.menuOpen #hamburger-menu span:last-of-type {
   height: 3.4em;
   width: auto;
   margin-top: 2em;
+  animation: animation-X-normal 1s ease;
 }
 
 .homepagina .iphoneTwaalf-gifts h2 {
   margin: 0.2em 2em 0.5em;
   padding: 0em;
   color: black;
+  animation: animation-X-reverse 1.5s ease;
 }
 
 .iphoneTwaalf-gifts a {
@@ -458,6 +467,7 @@ body.menuOpen #hamburger-menu span:last-of-type {
   color: #0071e3;
   font-size: 17px;
   display: block;
+  animation: animation-Y-normal 1.5s ease;
 }
 
 .iphoneTwaalf-gifts a:hover {
@@ -468,6 +478,7 @@ body.menuOpen #hamburger-menu span:last-of-type {
   height: 17em;
   width: auto;
   margin: 1em 0;
+  animation: animation-Y-normal 1.5s ease;
 }
 
 
@@ -475,7 +486,7 @@ body.menuOpen #hamburger-menu span:last-of-type {
 /* 4E CONTENBLOK | Apple Watch*/
 
 .homepagina .apple-watch {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .homepagina .apple-watch img:first-of-type {
@@ -720,6 +731,10 @@ body.menuOpen #hamburger-menu span:last-of-type {
 }
 */
 
+
+
+
+/*
 .homepagina .apple-tv {
   background-image: url("../images/apple-tv-bg.jpg");
   background-position: top;
@@ -729,6 +744,8 @@ body.menuOpen #hamburger-menu span:last-of-type {
   color: black;
   background-color: #fbfbfd;
   padding: 2em 0;
+  height: 25em;
+  position: relative;
 }
 
 .homepagina .apple-tv h2 {
@@ -738,12 +755,21 @@ body.menuOpen #hamburger-menu span:last-of-type {
   line-height: normal;
   font-weight: 400;
   letter-spacing: -.022em;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: block;
 }
 
 .homepagina .apple-tv a {
   text-decoration: none;
   color: #0071e3;
   font-size: font-size: 17px;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: block;
 }
 
 .homepagina .apple-tv a:hover {
@@ -763,6 +789,70 @@ body.menuOpen #hamburger-menu span:last-of-type {
   width: auto;
   margin-top: 2em;
 }
+*/
+
+
+
+
+
+.homepagina .apple-tv {
+  background-image: url("../images/apple-tv-achtergrond.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1em;
+  color: white;
+  background-color: #fbfbfd;
+  padding: 2em 0;
+  height: 25em;
+  position: relative;
+}
+
+.homepagina .apple-tv h2 {
+  margin: 0.5em auto;
+  font-family: AppleFontTekst, Arial;
+  font-size: 19px;
+  line-height: normal;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  bottom: 3em;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+}
+
+.homepagina .apple-tv a {
+  text-decoration: none;
+  color: #2997ff;
+  font-size: font-size: 17px;
+  bottom: 2em;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+}
+
+.homepagina .apple-tv a:hover {
+  text-decoration: underline #2997ff;
+}
+
+.homepagina .apple-tv img:first-of-type {
+  height: 1.6em;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+.homepagina .apple-tv img:last-of-type {
+  height: 4em;
+  width: auto;
+  margin-top: 2em;
+}
+
+
+
+
 
 
 
@@ -812,27 +902,6 @@ BLACK FRIDAY
   background-color: black;
 }
 
-.product-nav {
-  background-color: #111113;
-}
-
-/*
-.header-bericht-iphone {
-  padding: 0.5em;
-}
-
-.header-bericht-iphone span {
-  font-family: AppleFontText, Arial;
-  font-size: 12px;
-}
-
-.header-bericht-iphone a {
-  font-size: 12px;
-}
-*/
-
-
-
 /* HEADER BERICHT | iPhone*/
 
 .header-bericht-iphone {
@@ -861,6 +930,12 @@ BLACK FRIDAY
 
 /* PRODUCT NAVIGATIE | iPhone */
 
+
+.product-nav {
+  background-color: #111113;
+}
+
+
 .product-nav ul {
   list-style: none;
   margin: 0;
@@ -868,6 +943,7 @@ BLACK FRIDAY
   display: flex;
   justify-content: flex-start;
   overflow-y: hidden;
+  animation: animation-X-normal 0.5s ease;
 }
 
 .product-nav ul::-webkit-scrollbar {
@@ -918,6 +994,7 @@ BLACK FRIDAY
   background-color: black;
   color: white;
   text-align: center;
+  animation: animation-Y-normal 0.75s ease;
 }
 
 .iphone .contentblok h1 {
@@ -928,6 +1005,7 @@ BLACK FRIDAY
   font-weight: 600;
   letter-spacing: -0.025em;
   margin-bottom: -0.5em;
+  animation: animation-Y-normal 1s ease;
 }
 
 .iphone .contentblok h2 {
@@ -935,6 +1013,7 @@ BLACK FRIDAY
   font-weight: 600;
   margin: 0.5em auto;
   margin-bottom: 0.25em;
+  animation: animation-Y-normal 1.25s ease;
 }
 
 .iphone .contentblok p {
@@ -942,6 +1021,7 @@ BLACK FRIDAY
   /*  margin: 0.5em auto;*/
   margin: auto;
   color: #F5F5F7;
+  animation: animation-Y-normal 1.5s ease;
 }
 
 .iphone .contentblok a {
@@ -951,6 +1031,7 @@ BLACK FRIDAY
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: -0.05em;
+  animation: animation-Y-normal 2s ease;
 }
 
 .iphone .iphone-twaalf-gen a:first-of-type {
@@ -961,6 +1042,7 @@ BLACK FRIDAY
   margin: 1em auto;
   width: 2em;
   border-radius: 1em;
+  animation: animation-Y-normal 1.75s ease;
 }
 
 .iphone .contentblok a:hover {
@@ -1010,6 +1092,7 @@ BLACK FRIDAY
   font-weight: 600;
   margin: 0.5em auto;
   margin-bottom: 0.25em;
+  animation: animation-Y-normal 1.25s ease;
 }
 
 .iphone .iphone-twaalf-pro img {
@@ -1393,6 +1476,12 @@ BLACK FRIDAY
 
 .benefits article {
   margin-bottom: 5em;
+  animation: animation-X-normal 1s ease;
+}
+
+.benefits article:nth-child(3) {
+  margin-bottom: 5em;
+  animation: animation-X-reverse 1s ease;
 }
 
 .benefits h2 {
@@ -1732,6 +1821,17 @@ footer #footer-mobile h3.active:after {
     width: 80%;
   }
 
+  .homepagina .iphoneTwaalf-gifts {
+    background-image: url("../images/halve-iphone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30em;
+  }
+
+  .homepagina .iphoneTwaalf-gifts img:last-of-type {
+    display: none;
+  }
+
   .product-nav ul {
     justify-content: center;
   }
@@ -1882,8 +1982,39 @@ footer #footer-mobile h3.active:after {
     width: 40%;
   }
 
-  .homepagina .apple-tv img:first-of-type {
-    padding-bottom: 0em;
+  .homepagina .contentblok h1, h2 {
+    font-size: 56px;
+  }
+
+  .homepagina .iphoneTwaalf h3 {
+    font-size: 28px;
+  }
+
+    .homepagina .macbook-air h2, .homepagina .homepod-mini h2  {
+    font-size: 32px;
+  }
+
+  .contentblok h1 ~ h2 {
+    font-size: 28px;
+  }
+
+/*
+    .contentblok a {
+      font-size: 21px;
+    }
+*/
+
+  .homepagina .contentblok p, h3 {
+    font-size: 17px;
+  }
+
+  .header-bericht-blok p {
+    max-width: 100%;
+  }
+
+  .homepagina .apple-tv {
+    height: auto;
+    padding: 3em 0;
   }
 
   .iphone .iphone-compare .alle-vergelijk-modellen {
@@ -1914,6 +2045,24 @@ footer #footer-mobile h3.active:after {
 
   footer .footer-list ul {
     width: auto;
+  }
+
+  .iphone .contentblok p {
+    font-size: 21px;
+  }
+
+  .iphone .alle-vergelijk-modellen ul li p {
+    font-size: 14px;
+  }
+
+  .iphone .contentblok h1,
+  .iphone .iphone-twaalf-pro h2 {
+    font-size: 24px;
+  }
+
+  .iphone .iphone-twaalf-gen h2,
+  .iphone .iphone-twaalf-pro h3 {
+    font-size: 48px;
   }
 
   .iphone .iphone-artikel h3 {
@@ -1959,6 +2108,17 @@ footer #footer-mobile h3.active:after {
     width: 90%;
   }
 
+  .benefits article {
+    margin-bottom: 5em;
+    animation: animation-Y-normal 1s ease;
+  }
+
+  .benefits article:nth-child(3) {
+    margin-bottom: 5em;
+    animation: animation-Y-normal 1s ease;
+  }
+
+
   footer .copyright-en-links {
     flex-direction: row;
   }
@@ -1972,4 +2132,49 @@ footer #footer-mobile h3.active:after {
     margin: auto 0;
   }
 
+  .iphone .iphone-twaalf-gen a:first-of-type,
+  .iphone .iphone-twaalf-pro a:first-of-type {
+    font-size: 17px;
+  }
+
+}
+
+
+
+/* KEYFRAMES */
+
+@keyframes animation-X-normal {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animation-X-reverse {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animation-Y-normal {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
